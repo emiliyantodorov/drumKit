@@ -1,0 +1,80 @@
+$color-goldenrod: goldenrod;
+$color-primary: #007bff;
+$color-black: #333;
+$color-white: #fff;
+
+/*Reset css*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Base*/
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  background-color: $color-primary;
+}
+
+h1 {
+  color: $color-goldenrod;
+  text-align: center;
+  margin-bottom: 10rem;
+  margin-top: 4rem;
+  letter-spacing: .8rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+/*Components*/
+.bg-sound {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section-drum-kit {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 0 6rem;
+}
+
+.drum-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 5rem;
+  height: 6rem;
+  border-radius: 5px;
+  border: 2px solid #333;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .2);
+  transition: all .1s;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &__letter {
+    color: white;
+    margin-bottom: .5rem;
+  }
+
+  &__text {
+    color: $color-goldenrod;
+  }
+}
+
+/*Utility class*/
+.transform-box {
+  box-shadow: 0 0 5px 5px gold;
+  transform: scale(1.1);
+}

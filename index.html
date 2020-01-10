@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drum Kit</title>
+
+    <!--    Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!--    main css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-primary">
+
+<h1>DRUM KIT</h1>
+
+<section class="section-drum-kit">
+    <video class="bg-sound" autoplay loop muted>
+        <source src="sounds/Ma-Vibes.mp4">
+    </video>
+
+    <div class="drum-box" data-key="a">
+        <div class="drum-box__letter">
+            A
+        </div>
+        <div class="drum-box__text">
+            clap
+        </div>
+    </div>
+    <div class="drum-box" data-key="s">
+        <div class="drum-box__letter">
+            S
+        </div>
+        <div class="drum-box__text">
+            hihat
+        </div>
+    </div>
+    <div class="drum-box" data-key="d">
+        <div class="drum-box__letter">
+            D
+        </div>
+        <div class="drum-box__text">
+            kick
+        </div>
+    </div>
+    <div class="drum-box" data-key="f">
+        <div class="drum-box__letter">
+            F
+        </div>
+        <div class="drum-box__text">
+            openhat
+        </div>
+    </div>
+    <div class="drum-box" data-key="g">
+        <div class="drum-box__letter">
+            G
+        </div>
+        <div class="drum-box__text">
+            boom
+        </div>
+    </div>
+    <div class="drum-box" data-key="h">
+        <div class="drum-box__letter">
+            H
+        </div>
+        <div class="drum-box__text">
+            ride
+        </div>
+    </div>
+    <div class="drum-box" data-key="j">
+        <div class="drum-box__letter">
+            J
+        </div>
+        <div class="drum-box__text">
+            snare
+        </div>
+    </div>
+    <div class="drum-box" data-key="k">
+        <div class="drum-box__letter">
+            K
+        </div>
+        <div class="drum-box__text">
+            tom
+        </div>
+    </div>
+    <div class="drum-box" data-key="l">
+        <div class="drum-box__letter">
+            L
+        </div>
+        <div class="drum-box__text">
+            tink
+        </div>
+    </div>
+
+</section>
+
+<!--All sounds-->
+<audio src="sounds/clap.wav" data-key="a"></audio>
+<audio src="sounds/hihat.wav" data-key="s"></audio>
+<audio src="sounds/kick.wav" data-key="d"></audio>
+<audio src="sounds/openhat.wav" data-key="f"></audio>
+<audio src="sounds/boom.wav" data-key="g"></audio>
+<audio src="sounds/ride.wav" data-key="h"></audio>
+<audio src="sounds/snare.wav" data-key="j"></audio>
+<audio src="sounds/tom.wav" data-key="k"></audio>
+<audio src="sounds/tink.wav" data-key="l"></audio>
+
+<!--SCRIPTS-->
+<script src="app.js"></script>
+</body>
+</html>
